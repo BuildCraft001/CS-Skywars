@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "cs_skywars:block/corpus_steel_energy_container",
+    "up": "cs_skywars:block/corpus_steel_energy_container",
+    "north": "cs_skywars:block/corpus_steel_energy_container",
+    "east": "cs_skywars:block/corpus_steel_energy_container",
+    "south": "cs_skywars:block/corpus_steel_energy_container",
+    "west": "cs_skywars:block/corpus_steel_energy_container",
+    "particle": "cs_skywars:block/corpus_steel_energy_container"
+  },
+  "render_type": "solid"
+}

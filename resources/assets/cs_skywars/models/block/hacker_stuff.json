@@ -1,0 +1,9 @@
+{
+  "parent": "cs_skywars:custom/hacker_stuff",
+  "textures": {
+    "all": "cs_skywars:block/hacker_stuff",
+    "particle": "cs_skywars:block/hacker_stuff",
+    "0": "cs_skywars:block/hacker_stuff"
+  },
+  "render_type": "solid"
+}

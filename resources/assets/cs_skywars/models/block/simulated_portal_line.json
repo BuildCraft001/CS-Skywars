@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "cs_skywars:block/simulated_portal_line",
+    "up": "cs_skywars:block/simulated_portal_line",
+    "north": "cs_skywars:block/simulated_portal_line",
+    "east": "cs_skywars:block/simulated_portal_line",
+    "south": "cs_skywars:block/simulated_portal_line",
+    "west": "cs_skywars:block/simulated_portal_line",
+    "particle": "cs_skywars:block/simulated_portal_line"
+  },
+  "render_type": "solid"
+}

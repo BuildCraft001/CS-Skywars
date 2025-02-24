@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "cs_skywars:block/loot_block",
+    "up": "cs_skywars:block/loot_block",
+    "north": "cs_skywars:block/loot_block",
+    "east": "cs_skywars:block/loot_block",
+    "south": "cs_skywars:block/loot_block",
+    "west": "cs_skywars:block/loot_block",
+    "particle": "cs_skywars:block/loot_block"
+  },
+  "render_type": "solid"
+}

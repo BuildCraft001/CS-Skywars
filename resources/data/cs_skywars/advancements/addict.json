@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "cs_skywars:chaos_map"
+    },
+    "title": {
+      "translate": "advancements.addict.title"
+    },
+    "description": {
+      "translate": "advancements.addict.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "addict": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "cs_skywars:pro"
+}

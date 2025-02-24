@@ -1,0 +1,9 @@
+{
+  "parent": "cs_skywars:custom/hacker_screen",
+  "textures": {
+    "all": "cs_skywars:block/hacker_screen",
+    "particle": "cs_skywars:block/hacker_screen",
+    "1": "cs_skywars:block/hacker_screen"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "cs_skywars:block/simulated_power_line_unlit",
+    "up": "cs_skywars:block/simulated_power_line_unlit",
+    "north": "cs_skywars:block/simulated_power_line_unlit",
+    "east": "cs_skywars:block/simulated_power_line_unlit",
+    "south": "cs_skywars:block/simulated_power_line_unlit",
+    "west": "cs_skywars:block/simulated_power_line_unlit",
+    "particle": "cs_skywars:block/simulated_power_line_unlit"
+  },
+  "render_type": "solid"
+}

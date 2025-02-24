@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "cs_skywars:chaos_map"
+    },
+    "title": {
+      "translate": "advancements.advanced.title"
+    },
+    "description": {
+      "translate": "advancements.advanced.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "advanced": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "cs_skywars:rookie"
+}

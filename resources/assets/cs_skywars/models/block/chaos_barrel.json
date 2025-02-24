@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "cs_skywars:block/chaos_barrel_n",
+    "up": "cs_skywars:block/chaos_barrel_n",
+    "north": "cs_skywars:block/chaos_barrel_n",
+    "east": "cs_skywars:block/chaos_barrel_n",
+    "south": "cs_skywars:block/chaos_barrel_n",
+    "west": "cs_skywars:block/chaos_barrel_n",
+    "particle": "cs_skywars:block/chaos_barrel_n"
+  },
+  "render_type": "solid"
+}

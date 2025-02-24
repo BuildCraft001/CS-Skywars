@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:sculk_shrieker"
+    },
+    "title": {
+      "translate": "advancements.the_scary_side_2.title"
+    },
+    "description": {
+      "translate": "advancements.the_scary_side_2.descr"
+    },
+    "frame": "challenge",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "the_scary_side_2": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "cs_skywars:the_scary_side"
+}

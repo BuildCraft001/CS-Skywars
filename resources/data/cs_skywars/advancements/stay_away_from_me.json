@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:wooden_sword"
+    },
+    "title": {
+      "translate": "advancements.stay_away_from_me.title"
+    },
+    "description": {
+      "translate": "advancements.stay_away_from_me.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "stay_away_from_me": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "cs_skywars:get_removed"
+}

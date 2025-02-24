@@ -1,0 +1,9 @@
+{
+  "parent": "cs_skywars:custom/hacker_stul",
+  "textures": {
+    "all": "cs_skywars:block/hacker_stool",
+    "particle": "cs_skywars:block/hacker_stool",
+    "0": "cs_skywars:block/hacker_stool"
+  },
+  "render_type": "solid"
+}

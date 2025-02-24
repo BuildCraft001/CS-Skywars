@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:wooden_sword"
+    },
+    "title": {
+      "translate": "advancements.carried.title"
+    },
+    "description": {
+      "translate": "advancements.carried.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "carried": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "cs_skywars:facile_victory"
+}

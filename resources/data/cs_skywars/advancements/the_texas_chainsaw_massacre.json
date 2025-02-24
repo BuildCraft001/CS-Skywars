@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:wooden_sword"
+    },
+    "title": {
+      "translate": "advancements.the_texas_chainsaw_massacre.title"
+    },
+    "description": {
+      "translate": "advancements.the_texas_chainsaw_massacre.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "the_texas_chainsaw_massacre": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "cs_skywars:experienced_murderer"
+}

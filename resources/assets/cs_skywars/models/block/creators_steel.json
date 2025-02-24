@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "cs_skywars:block/creators_steel",
+    "up": "cs_skywars:block/creators_steel",
+    "north": "cs_skywars:block/creators_steel",
+    "east": "cs_skywars:block/creators_steel",
+    "south": "cs_skywars:block/creators_steel",
+    "west": "cs_skywars:block/creators_steel",
+    "particle": "cs_skywars:block/creators_steel"
+  },
+  "render_type": "solid"
+}

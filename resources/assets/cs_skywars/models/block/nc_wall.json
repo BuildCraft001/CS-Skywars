@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "cs_skywars:block/build_allow",
+    "up": "cs_skywars:block/build_allow",
+    "north": "cs_skywars:block/build_allow",
+    "east": "cs_skywars:block/build_allow",
+    "south": "cs_skywars:block/build_allow",
+    "west": "cs_skywars:block/build_allow",
+    "particle": "cs_skywars:block/build_allow"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "cs_skywars:i_see_you"
+    },
+    "title": {
+      "translate": "advancements.i_see_you_ac.title"
+    },
+    "description": {
+      "translate": "advancements.i_see_you_ac.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "i_see_you_ac": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "cs_skywars:random_stuff"
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "cs_skywars:i_see_you_activator"
+    }
+  ],
+  "result": {
+    "item": "cs_skywars:ult_energy_cell",
+    "count": 2
+  }
+}

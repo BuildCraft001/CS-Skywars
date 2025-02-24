@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "cs_skywars:rocket_launcher"
+    },
+    "title": {
+      "translate": "advancements.air_strike.title"
+    },
+    "description": {
+      "translate": "advancements.air_strike.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "air_strike": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "cs_skywars:long_flight"
+}

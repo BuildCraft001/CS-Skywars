@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:sculk"
+    },
+    "title": {
+      "translate": "advancements.the_scary_side.title"
+    },
+    "description": {
+      "translate": "advancements.the_scary_side.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "the_scary_side": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "cs_skywars:random_stuff"
+}

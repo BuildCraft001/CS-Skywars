@@ -1,0 +1,9 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "bottom": "cs_skywars:block/corpus_steel",
+    "top": "cs_skywars:block/corpus_steel",
+    "side": "cs_skywars:block/corpus_steel"
+  },
+  "render_type": "solid"
+}

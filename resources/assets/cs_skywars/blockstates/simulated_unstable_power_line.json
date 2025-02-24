@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "cs_skywars:block/simulated_unstable_power_line",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "cs_skywars:block/simulated_unstable_power_line"
+    },
+    "axis=z": {
+      "model": "cs_skywars:block/simulated_unstable_power_line",
+      "x": 90
+    }
+  }
+}

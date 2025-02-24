@@ -1,0 +1,7 @@
+{
+  "parent": "cs_skywars:custom/creators_gauntlet",
+  "textures": {
+    "1": "cs_skywars:block/creators_gauntlet",
+    "particle": "cs_skywars:item/corpus_steel_door_icon"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "cs_skywars:chaos_loot_block"
+    },
+    "title": {
+      "translate": "advancements.winning_sucks.title"
+    },
+    "description": {
+      "translate": "advancements.winning_sucks.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "winning_sucks": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "cs_skywars:progress"
+}

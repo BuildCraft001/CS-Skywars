@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:clock"
+    },
+    "title": {
+      "translate": "advancements.last_second.title"
+    },
+    "description": {
+      "translate": "advancements.last_second.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "last_second": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "cs_skywars:first_blood"
+}

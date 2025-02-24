@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "cs_skywars:loot_block"
+    },
+    "title": {
+      "translate": "advancements.bounty_hunt_2.title"
+    },
+    "description": {
+      "translate": "advancements.bounty_hunt_2.descr"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "bounty_hunt_2": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "parent": "cs_skywars:mode_specific"
+}

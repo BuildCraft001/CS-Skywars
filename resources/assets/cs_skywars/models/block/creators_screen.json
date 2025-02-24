@@ -1,0 +1,9 @@
+{
+  "parent": "cs_skywars:custom/creators_screen",
+  "textures": {
+    "all": "cs_skywars:block/creators_screen",
+    "particle": "cs_skywars:block/creators_screen",
+    "3": "cs_skywars:block/creators_screen"
+  },
+  "render_type": "solid"
+}

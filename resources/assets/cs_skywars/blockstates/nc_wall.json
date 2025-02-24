@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "cs_skywars:block/nc_wall"
+    }
+  }
+}

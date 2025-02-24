@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "cs_skywars:block/hacker_screen"
+    },
+    "facing=east": {
+      "model": "cs_skywars:block/hacker_screen",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "cs_skywars:block/hacker_screen",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "cs_skywars:block/hacker_screen",
+      "y": 270
+    }
+  }
+}

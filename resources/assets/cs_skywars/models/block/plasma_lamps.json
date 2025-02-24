@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "cs_skywars:block/plasma_lamp",
+    "up": "cs_skywars:block/plasma_lamp",
+    "north": "cs_skywars:block/plasma_lamp",
+    "east": "cs_skywars:block/plasma_lamp",
+    "south": "cs_skywars:block/plasma_lamp",
+    "west": "cs_skywars:block/plasma_lamp",
+    "particle": "cs_skywars:block/plasma_lamp"
+  },
+  "render_type": "solid"
+}

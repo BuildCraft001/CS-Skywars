@@ -1,0 +1,7 @@
+{
+  "parent": "block/template_fence_gate",
+  "textures": {
+    "texture": "cs_skywars:block/corpus_steel_fence"
+  },
+  "render_type": "solid"
+}

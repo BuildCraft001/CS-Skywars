@@ -1,0 +1,48 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "cs_skywars:block/corpus_steel_fence_post"
+      }
+    },
+    {
+      "when": {
+        "north": "true"
+      },
+      "apply": {
+        "model": "cs_skywars:block/corpus_steel_fence",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "south": "true"
+      },
+      "apply": {
+        "model": "cs_skywars:block/corpus_steel_fence",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "west": "true"
+      },
+      "apply": {
+        "model": "cs_skywars:block/corpus_steel_fence",
+        "y": 270,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "east": "true"
+      },
+      "apply": {
+        "model": "cs_skywars:block/corpus_steel_fence",
+        "y": 90,
+        "uvlock": true
+      }
+    }
+  ]
+}

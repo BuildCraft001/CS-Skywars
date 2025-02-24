@@ -1,0 +1,9 @@
+{
+  "parent": "block/slab_top",
+  "textures": {
+    "bottom": "cs_skywars:block/polished_diorite",
+    "top": "cs_skywars:block/polished_diorite",
+    "side": "cs_skywars:block/polished_diorite"
+  },
+  "render_type": "solid"
+}

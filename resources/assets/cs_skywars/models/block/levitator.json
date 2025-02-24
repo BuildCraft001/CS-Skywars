@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "cs_skywars:block/weee",
+    "up": "cs_skywars:block/weee",
+    "north": "cs_skywars:block/weee",
+    "east": "cs_skywars:block/weee",
+    "south": "cs_skywars:block/weee",
+    "west": "cs_skywars:block/weee",
+    "particle": "cs_skywars:block/weee"
+  },
+  "render_type": "solid"
+}

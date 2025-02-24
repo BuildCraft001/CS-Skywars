@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "cs_skywars:block/tper",
+    "up": "cs_skywars:block/tper",
+    "north": "cs_skywars:block/tper",
+    "east": "cs_skywars:block/tper",
+    "south": "cs_skywars:block/tper",
+    "west": "cs_skywars:block/tper",
+    "particle": "cs_skywars:block/tper"
+  },
+  "render_type": "solid"
+}

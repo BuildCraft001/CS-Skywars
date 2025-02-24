@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "cs_skywars:block/corpus_steel"
+    },
+    "facing=east": {
+      "model": "cs_skywars:block/corpus_steel",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "cs_skywars:block/corpus_steel",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "cs_skywars:block/corpus_steel",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_orientable_trapdoor_open",
+  "textures": {
+    "texture": "cs_skywars:block/corpus_steel_trapdoor",
+    "particle": "cs_skywars:block/corpus_steel_trapdoor"
+  },
+  "render_type": "cutout"
+}

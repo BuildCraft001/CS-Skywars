@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "cs_skywars:loot_block"
+    },
+    "title": {
+      "translate": "advancements.item_king.title"
+    },
+    "description": {
+      "translate": "advancements.item_king.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "item_king": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "cs_skywars:richer_in_items"
+}

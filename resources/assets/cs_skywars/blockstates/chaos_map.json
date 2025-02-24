@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "cs_skywars:block/chaos_map"
+    }
+  }
+}

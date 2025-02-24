@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "cs_skywars:block/simulated_border",
+    "up": "cs_skywars:block/simulated_border",
+    "north": "cs_skywars:block/simulated_border",
+    "east": "cs_skywars:block/simulated_border",
+    "south": "cs_skywars:block/simulated_border",
+    "west": "cs_skywars:block/simulated_border",
+    "particle": "cs_skywars:block/simulated_border"
+  },
+  "render_type": "solid"
+}

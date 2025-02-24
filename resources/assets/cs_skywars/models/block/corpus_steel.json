@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "cs_skywars:block/corpus_steel",
+    "up": "cs_skywars:block/corpus_steel",
+    "north": "cs_skywars:block/corpus_steel",
+    "east": "cs_skywars:block/corpus_steel",
+    "south": "cs_skywars:block/corpus_steel",
+    "west": "cs_skywars:block/corpus_steel",
+    "particle": "cs_skywars:block/corpus_steel"
+  },
+  "render_type": "solid"
+}

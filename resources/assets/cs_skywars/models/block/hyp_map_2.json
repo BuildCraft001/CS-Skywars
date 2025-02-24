@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "cs_skywars:block/cobblestone",
+    "up": "cs_skywars:block/cobblestone",
+    "north": "cs_skywars:block/cobblestone",
+    "east": "cs_skywars:block/cobblestone",
+    "south": "cs_skywars:block/cobblestone",
+    "west": "cs_skywars:block/cobblestone",
+    "particle": "cs_skywars:block/cobblestone"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:wooden_sword"
+    },
+    "title": {
+      "translate": "advancements.experienced_murderer.title"
+    },
+    "description": {
+      "translate": "advancements.experienced_murderer.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "experienced_murderer": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "cs_skywars:purple_guy"
+}

@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:tnt"
+    },
+    "title": {
+      "translate": "advancements.kill_em_all.title"
+    },
+    "description": {
+      "translate": "advancements.kill_em_all.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "kill_em_all": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "cs_skywars:team_wars"
+}

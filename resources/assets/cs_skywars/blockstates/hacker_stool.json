@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "cs_skywars:block/hacker_stool"
+    },
+    "facing=east": {
+      "model": "cs_skywars:block/hacker_stool",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "cs_skywars:block/hacker_stool",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "cs_skywars:block/hacker_stool",
+      "y": 270
+    }
+  }
+}

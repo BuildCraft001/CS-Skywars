@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "cs_skywars:creators_gauntlet"
+    },
+    "title": {
+      "translate": "advancements.air_strike_gauntlet.title"
+    },
+    "description": {
+      "translate": "advancements.air_strike_gauntlet.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "air_strike_gauntlet": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "cs_skywars:i_see_you_ac"
+}

@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:netherite_sword"
+    },
+    "title": {
+      "translate": "advancements.carnage.title"
+    },
+    "description": {
+      "translate": "advancements.carnage.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "carnage": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "cs_skywars:maniac"
+}

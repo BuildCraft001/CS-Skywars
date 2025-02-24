@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "cs_skywars:chaos_loot_block"
+    },
+    "title": {
+      "translate": "advancements.shit_really_really_really_happens.title"
+    },
+    "description": {
+      "translate": "advancements.shit_really_really_really_happens.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "shit_really_really_really_happens": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "cs_skywars:shit_really_really_happens"
+}

@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:magenta_glazed_terracotta"
+    },
+    "title": {
+      "translate": "advancements.where_map.title"
+    },
+    "description": {
+      "translate": "advancements.where_map.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "where_map": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "cs_skywars:long_flight"
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "block/fence_post",
+  "textures": {
+    "texture": "cs_skywars:block/corpus_steel_fence",
+    "particle": "cs_skywars:block/corpus_steel_fence"
+  },
+  "render_type": "solid"
+}

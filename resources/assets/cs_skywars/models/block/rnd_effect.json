@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "cs_skywars:block/rnd",
+    "up": "cs_skywars:block/rnd",
+    "north": "cs_skywars:block/rnd",
+    "east": "cs_skywars:block/rnd",
+    "south": "cs_skywars:block/rnd",
+    "west": "cs_skywars:block/rnd",
+    "particle": "cs_skywars:block/rnd"
+  },
+  "render_type": "solid"
+}

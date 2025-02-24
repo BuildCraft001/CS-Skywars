@@ -1,0 +1,384 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 8,
+                    "name": "minecraft:leather_helmet"
+                },
+                {
+                    "type": "item",
+                    "weight": 8,
+                    "name": "minecraft:leather_chestplate"
+                },
+                {
+                    "type": "item",
+                    "weight": 8,
+                    "name": "minecraft:leather_leggings"
+                },
+                {
+                    "type": "item",
+                    "weight": 8,
+                    "name": "minecraft:leather_boots"
+                },
+                {
+                    "type": "item",
+                    "weight": 4,
+                    "name": "minecraft:iron_helmet"
+                },
+                {
+                    "type": "item",
+                    "weight": 4,
+                    "name": "minecraft:iron_chestplate"
+                },
+                {
+                    "type": "item",
+                    "weight": 4,
+                    "name": "minecraft:iron_leggings"
+                },
+                {
+                    "type": "item",
+                    "weight": 4,
+                    "name": "minecraft:iron_boots"
+                },
+                {
+                    "type": "item",
+                    "weight": 2,
+                    "name": "minecraft:diamond_helmet"
+                },
+                {
+                    "type": "item",
+                    "weight": 2,
+                    "name": "minecraft:diamond_chestplate"
+                },
+                {
+                    "type": "item",
+                    "weight": 2,
+                    "name": "minecraft:diamond_leggings"
+                },
+                {
+                    "type": "item",
+                    "weight": 2,
+                    "name": "minecraft:diamond_boots"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "cs_skywars:hoverarmor_lvl_5_helmet"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "cs_skywars:hoverarmor_lvl_5_chestplate"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "cs_skywars:hoverarmor_lvl_5_leggings"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "cs_skywars:hoverarmor_lvl_5_boots"
+                },
+                {
+                    "type": "item",
+                    "weight": 5,
+                    "name": "minecraft:shield",
+                    "functions": [
+                        {
+                            "function": "set_damage",
+                            "damage": {
+                                "min": 0.01,
+                                "max": 0.1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "empty",
+                    "weight": 135
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 8,
+                    "name": "minecraft:golden_apple"
+                },
+                {
+                    "type": "item",
+                    "weight": 2,
+                    "name": "cs_skywars:op_gap"
+                },
+                {
+                    "type": "item",
+                    "weight": 3,
+                    "name": "minecraft:totem_of_undying"
+                },
+                {
+                    "type": "item",
+                    "weight": 2,
+                    "name": "minecraft:elytra",
+                    "functions": [
+                        {
+                            "function": "set_damage",
+                            "damage": {
+                                "min": 0.01,
+                                "max": 0.03
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 5,
+                    "name": "cs_skywars:op_carrot"
+                },
+                {
+                    "type": "item",
+                    "weight": 8,
+                    "name": "minecraft:ender_pearl",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 2
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 7,
+                    "name": "cs_skywars:loot_block_pickaxe"
+                },
+                {
+                    "type": "empty",
+                    "weight": 65
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 15,
+                    "name": "minecraft:arrow",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 2,
+                                "max": 3
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 15,
+                    "name": "cs_skywars:grenade",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 2
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 5,
+                    "name": "cs_skywars:super_grenade"
+                },
+                {
+                    "type": "item",
+                    "weight": 5,
+                    "name": "minecraft:firework_rocket"
+                },
+                {
+                    "type": "item",
+                    "weight": 5,
+                    "name": "cs_skywars:dasher"
+                },
+                {
+                    "type": "empty",
+                    "weight": 55
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 8,
+                    "name": "minecraft:wooden_sword",
+                    "functions": [
+                        {
+                            "function": "set_damage",
+                            "damage": {
+                                "min": 0.2,
+                                "max": 0.3
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 8,
+                    "name": "minecraft:stone_sword",
+                    "functions": [
+                        {
+                            "function": "set_damage",
+                            "damage": {
+                                "min": 0.1,
+                                "max": 0.2
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 8,
+                    "name": "minecraft:iron_sword",
+                    "functions": [
+                        {
+                            "function": "set_damage",
+                            "damage": {
+                                "min": 0.1,
+                                "max": 0.2
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 4,
+                    "name": "minecraft:diamond_sword",
+                    "functions": [
+                        {
+                            "function": "set_damage",
+                            "damage": {
+                                "min": 0.05,
+                                "max": 0.1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "minecraft:netherite_sword",
+                    "functions": [
+                        {
+                            "function": "set_damage",
+                            "damage": {
+                                "min": 0.04,
+                                "max": 0.07
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 7,
+                    "name": "minecraft:bow",
+                    "functions": [
+                        {
+                            "function": "set_damage",
+                            "damage": {
+                                "min": 0.005,
+                                "max": 0.01
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 7,
+                    "name": "minecraft:crossbow",
+                    "functions": [
+                        {
+                            "function": "set_damage",
+                            "damage": {
+                                "min": 0.005,
+                                "max": 0.01
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 4,
+                    "name": "minecraft:trident",
+                    "functions": [
+                        {
+                            "function": "set_damage",
+                            "damage": {
+                                "min": 0.01,
+                                "max": 0.02
+                            }
+                        },
+                        {
+                            "function": "enchant_randomly",
+                            "enchantments": [
+                                "loyalty"
+                            ]
+                        },
+                        {
+                            "function": "enchant_randomly",
+                            "enchantments": [
+                                "unbreaking"
+                            ],
+                            "conditions": [
+                                {
+                                    "condition": "random_chance",
+                                    "chance": 0.1
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 2,
+                    "name": "minecraft:golden_sword",
+                    "functions": [
+                        {
+                            "function": "enchant_randomly"
+                        }
+                    ]
+                },
+                {
+                    "type": "empty",
+                    "weight": 53
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 4,
+                    "name": "cs_skywars:ult_loot_block"
+                },
+                {
+                    "type": "empty",
+                    "weight": 96
+                }
+            ]
+        }
+    ]
+}

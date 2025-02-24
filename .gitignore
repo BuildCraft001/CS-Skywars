@@ -1,0 +1,7 @@
+*.ogg
+
+/java/net/csstudios/skywars/CsSkywarsMod.java
+/java/net/csstudios/skywars/init/
+
+/resources/assets/cs_skywars/textures/screens/boohoo.png
+/resources/assets/cs_skywars/textures/screens/boohoo2.png

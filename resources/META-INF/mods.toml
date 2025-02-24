@@ -1,0 +1,24 @@
+modLoader="javafml"
+loaderVersion="[45,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="cs_skywars"
+version="2.0.20"
+displayName="CS Skywars: Reimagined"
+credits="Credits can be found in game by opening the Minecraft credits"
+displayURL="https://cs-studios.net"
+logoFile="logo.png"
+authors="CS Studios"
+description="CS Skywars: Reimagined - The Forge mod"
+
+[[dependencies.cs_skywars]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.19.4]"
+    ordering="NONE"
+    side="BOTH"
+
+
+
+

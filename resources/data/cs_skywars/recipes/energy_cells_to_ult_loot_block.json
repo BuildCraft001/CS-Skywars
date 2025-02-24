@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "cs_skywars:ult_energy_cell"
+    },
+    {
+      "item": "cs_skywars:ult_energy_cell"
+    },
+    {
+      "item": "cs_skywars:ult_energy_cell"
+    },
+    {
+      "item": "cs_skywars:ult_energy_cell"
+    }
+  ],
+  "result": {
+    "item": "cs_skywars:ult_loot_block",
+    "count": 1
+  }
+}

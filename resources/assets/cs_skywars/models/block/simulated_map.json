@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "cs_skywars:block/simulated_map",
+    "up": "cs_skywars:block/simulated_map",
+    "north": "cs_skywars:block/simulated_map",
+    "east": "cs_skywars:block/simulated_map",
+    "south": "cs_skywars:block/simulated_map",
+    "west": "cs_skywars:block/simulated_map",
+    "particle": "cs_skywars:block/simulated_map"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "cs_skywars:block/polished_diorite",
+    "up": "cs_skywars:block/polished_diorite",
+    "north": "cs_skywars:block/polished_diorite",
+    "east": "cs_skywars:block/polished_diorite",
+    "south": "cs_skywars:block/polished_diorite",
+    "west": "cs_skywars:block/polished_diorite",
+    "particle": "cs_skywars:block/polished_diorite"
+  },
+  "render_type": "solid"
+}

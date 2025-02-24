@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "cs_skywars:block/corpus_steel_slab"
+    },
+    "type=top": {
+      "model": "cs_skywars:block/corpus_steel_slab_top"
+    },
+    "type=double": {
+      "model": "cs_skywars:block/corpus_steel_slab_full"
+    }
+  }
+}

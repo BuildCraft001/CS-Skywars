@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "cs_skywars:chaos_barrel"
+    },
+    "title": {
+      "translate": "advancements.pro_player_ong.title"
+    },
+    "description": {
+      "translate": "advancements.pro_player_ong.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "pro_player_ong": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "cs_skywars:youre_all_bad"
+}

@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "cs_skywars:loot_block"
+    },
+    "title": {
+      "translate": "advancements.random_stuff.title"
+    },
+    "description": {
+      "translate": "advancements.random_stuff.descr"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "random_stuff": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "parent": "cs_skywars:cs_skywars"
+}
