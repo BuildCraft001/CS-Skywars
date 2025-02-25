@@ -27,10 +27,6 @@ public class RocketExplodeProcedure {
 		double xCord = 0;
 		double yCord = 0;
 		double zCord = 0;
-		i = 0;
-		j = 0;
-		k = 0;
-		i = 0;
 		while (i < 14) {
 		    i++;
 		    xCord = x - 7 + i;

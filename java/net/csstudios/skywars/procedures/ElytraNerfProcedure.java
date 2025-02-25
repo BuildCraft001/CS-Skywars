@@ -37,7 +37,7 @@ public class ElytraNerfProcedure {
 		double i = 0;
 		chestplate = (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY);
 		if (entity instanceof LivingEntity _livEnt ? _livEnt.isFallFlying() : false) {
-			if (chestplate.getDamageValue() < 425) {
+			if (chestplate.getDamageValue() < 426) {
 				{
 					ItemStack _ist = chestplate;
 					if (_ist.hurt(1, RandomSource.create(), null)) {
