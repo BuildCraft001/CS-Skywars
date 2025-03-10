@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "cs_skywars:block/corrupted_map_crack",
+    "up": "cs_skywars:block/corrupted_map_crack",
+    "north": "cs_skywars:block/corrupted_map_crack",
+    "east": "cs_skywars:block/corrupted_map_crack",
+    "south": "cs_skywars:block/corrupted_map_crack",
+    "west": "cs_skywars:block/corrupted_map_crack",
+    "particle": "cs_skywars:block/corrupted_map_crack"
+  },
+  "render_type": "solid"
+}

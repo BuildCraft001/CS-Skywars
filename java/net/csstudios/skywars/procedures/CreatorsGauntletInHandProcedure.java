@@ -22,7 +22,7 @@ public class CreatorsGauntletInHandProcedure {
 			if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
 				_entity.addEffect(new MobEffectInstance(MobEffects.DIG_SPEED, 1, 1, false, false));
 			if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
-				_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 1, 1, false, false));
+				_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 1, 2, false, false));
 			if ((world.getBlockState(BlockPos.containing(x, y - 1, z))).getBlock() == Blocks.AIR) {
 				world.setBlock(BlockPos.containing(x, y - 1, z), CsSkywarsModBlocks.CREATORS_STEEL_NG.get().defaultBlockState(), 3);
 			}
