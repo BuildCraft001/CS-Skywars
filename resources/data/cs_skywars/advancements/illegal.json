@@ -1,0 +1,54 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:bedrock"
+    },
+    "title": {
+      "translate": "advancements.illegal.title"
+    },
+    "description": {
+      "translate": "advancements.illegal.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "illegal": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:bedrock",
+              "cs-skywars:map",
+              "cs-skywars:chaos_map",
+              "cs-skywars:chaos_barrel",
+              "cs-skywars:levitator",
+              "cs-skywars:healer"
+              "cs-skywars:teleporter",
+              "cs-skywars:rnd_effect",
+              "cs-skywars:chaos_light",
+              "cs-skywars:hyp_map",
+              "cs-skywars:hyp_map_2",
+              "cs-skywars:hyp_map_slab",
+              "cs-skywars:simulated_map",
+              "cs-skywars:simulated_border",
+              "cs-skywars:simulated_power_line",
+              "cs-skywars:simulated_power_line_unlit",
+              "cs-skywars:simulated_source_code",
+              "cs-skywars:simulated_portal_line"
+              "cs-skywars:simulated_regeneration_line",
+              "cs-skywars:simulated_unstable_power_line",
+              "cs-skywars:loot_block",
+              "cs-skywars:chaos_loot_block",
+              "cs-skywars:simulated_loot_block"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "parent": "cs_skywars:random_stuff"
+}

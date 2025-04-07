@@ -212,8 +212,18 @@
                     "name": "cs_skywars:dasher"
                 },
                 {
+                    "type": "item",
+                    "weight": 5,
+                    "name": "cs_skywars:bridge_egg"
+                },
+                {
+                    "type": "item",
+                    "weight": 5,
+                    "name": "cs_skywars:creeper_grenade"
+                },
+                {
                     "type": "empty",
-                    "weight": 55
+                    "weight": 45
                 }
             ]
         },

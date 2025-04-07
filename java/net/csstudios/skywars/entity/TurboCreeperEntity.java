@@ -30,6 +30,7 @@ import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 
 import net.csstudios.skywars.procedures.TurboCreeperExplosionProcedure;
+import net.csstudios.skywars.procedures.TurboCreeperDeathProcedure;
 import net.csstudios.skywars.init.CsSkywarsModItems;
 import net.csstudios.skywars.init.CsSkywarsModEntities;
 
@@ -108,9 +109,15 @@ public class TurboCreeperEntity extends Monster {
 	}
 
 	@Override
+	public void die(DamageSource source) {
+		super.die(source);
+		TurboCreeperDeathProcedure.execute(source.getEntity());
+	}
+
+	@Override
 	public void playerTouch(Player sourceentity) {
 		super.playerTouch(sourceentity);
-		TurboCreeperExplosionProcedure.execute(this.level, this.getX(), this.getY(), this.getZ(), this);
+		TurboCreeperExplosionProcedure.execute(this.level, this.getX(), this.getY(), this.getZ(), this, sourceentity);
 	}
 
 	public static void init() {

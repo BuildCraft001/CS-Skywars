@@ -48,11 +48,6 @@ public class TurretEntity extends Monster {
 	}
 
 	@Override
-	public double getMyRidingOffset() {
-		return -0.35D;
-	}
-
-	@Override
 	public SoundEvent getHurtSound(DamageSource ds) {
 		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.anvil.land"));
 	}
@@ -64,8 +59,6 @@ public class TurretEntity extends Monster {
 
 	@Override
 	public boolean hurt(DamageSource source, float amount) {
-		if (source.is(DamageTypes.FALL))
-			return false;
 		if (source.is(DamageTypes.EXPLOSION))
 			return false;
 		return super.hurt(source, amount);

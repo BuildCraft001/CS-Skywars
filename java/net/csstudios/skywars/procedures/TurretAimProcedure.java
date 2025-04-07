@@ -31,7 +31,7 @@ public class TurretAimProcedure {
 					return _sc.getOrCreatePlayerScore(_ent.getScoreboardName(), _so).getScore();
 				return 0;
 			}
-		}.getScore("turretcooldown", entity) == 0 && !(((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 64, 64, 64), e -> true).stream().sorted(new Object() {
+		}.getScore("turretcooldown", entity) % 2 == 0 && !(((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 64, 64, 64), e -> true).stream().sorted(new Object() {
 			Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 				return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 			}
@@ -49,6 +49,20 @@ public class TurretAimProcedure {
 					return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 				}
 			}.compareDistOf(x, y, z)).findFirst().orElse(null)).getZ())));
+		}
+		if (!world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 64, 64, 64), e -> true).isEmpty() && new Object() {
+			public int getScore(String score, Entity _ent) {
+				Scoreboard _sc = _ent.getLevel().getScoreboard();
+				Objective _so = _sc.getObjective(score);
+				if (_so != null)
+					return _sc.getOrCreatePlayerScore(_ent.getScoreboardName(), _so).getScore();
+				return 0;
+			}
+		}.getScore("turretcooldown", entity) == 0 && !(((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 64, 64, 64), e -> true).stream().sorted(new Object() {
+			Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+				return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+			}
+		}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
 			{
 				Entity _shootFrom = entity;
 				Level projectileLevel = _shootFrom.level;

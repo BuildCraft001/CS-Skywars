@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "cs_skywars:block/corrupted_map"
+    },
+    "facing=east": {
+      "model": "cs_skywars:block/corrupted_map",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "cs_skywars:block/corrupted_map",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "cs_skywars:block/corrupted_map",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "cs_skywars:custom/corrupted_map",
+  "textures": {
+    "all": "cs_skywars:block/corrupted_map_5",
+    "particle": "cs_skywars:block/corrupted_map_5",
+    "0": "cs_skywars:block/corrupted_map_5"
+  },
+  "render_type": "solid"
+}
