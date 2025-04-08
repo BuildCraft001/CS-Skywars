@@ -31,7 +31,7 @@ public class TurretAimProcedure {
 					return _sc.getOrCreatePlayerScore(_ent.getScoreboardName(), _so).getScore();
 				return 0;
 			}
-		}.getScore("turretcooldown", entity) % 2 == 0 && !(((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 64, 64, 64), e -> true).stream().sorted(new Object() {
+		}.getScore("turretcooldown", entity) % 20 == 0 && !(((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 64, 64, 64), e -> true).stream().sorted(new Object() {
 			Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 				return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 			}

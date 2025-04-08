@@ -2,19 +2,26 @@ package net.csstudios.skywars.procedures;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.Vec2;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.chat.Component;
+import net.minecraft.core.BlockPos;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
 
-public class TurretGrenadeNoGravityProcedure {
+public class TurretSpawnProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
+		double i = 0;
+		i = 0;
+		while (!((world.getBlockState(BlockPos.containing(x, y + i, z))).getBlock() == Blocks.AIR)) {
+			i = i + 1;
+		}
+		if (world instanceof ServerLevel _level)
+			_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, (y + i), z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+					"summon cs_skywars:turret ~ ~ ~");
 		if (world instanceof ServerLevel _level)
 			_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-					"execute as @e[type=cs_skywars:projectile_turret_grenade,distance=..1,limit=1] run data merge entity @s {NoGravity:1b}");
-		if (world instanceof ServerLevel _level)
-			_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-					"execute as @e[type=cs_skywars:projectile_turret_spawner,distance=..1,limit=1] run data merge entity @s {NoGravity:1b}");
+					"kill @e[type=cs_skywars:projectile_turret_spawner,distance=..2]");
 	}
 }

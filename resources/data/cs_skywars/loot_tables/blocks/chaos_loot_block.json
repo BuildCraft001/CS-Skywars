@@ -222,8 +222,13 @@
                     "name": "cs_skywars:creeper_grenade"
                 },
                 {
+                    "type": "item",
+                    "weight": 5,
+                    "name": "cs_skywars:turret_spawner"
+                },
+                {
                     "type": "empty",
-                    "weight": 45
+                    "weight": 40
                 }
             ]
         },
