@@ -15,9 +15,11 @@ public class CreeperJumpscareProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
-			_entity.addEffect(new MobEffectInstance(CsSkywarsModMobEffects.CREEPER_JUMPSCARE_EFFECT.get(), 20, 0, true, false));
+			_entity.addEffect(new MobEffectInstance(CsSkywarsModMobEffects.CREEPER_JUMPSCARE_EFFECT.get(), 20, 0, false, false));
 		if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
-			_entity.addEffect(new MobEffectInstance(MobEffects.BLINDNESS, 60, 0, true, false));
+			_entity.addEffect(new MobEffectInstance(CsSkywarsModMobEffects.FREEZE.get(), 20, 0, false, false));
+		if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+			_entity.addEffect(new MobEffectInstance(MobEffects.BLINDNESS, 60, 0, false, false));
 		{
 			Entity _ent = entity;
 			if (!_ent.level.isClientSide() && _ent.getServer() != null) {

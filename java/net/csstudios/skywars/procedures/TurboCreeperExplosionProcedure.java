@@ -35,7 +35,7 @@ public class TurboCreeperExplosionProcedure {
 				return 0;
 			}
 		}.getScore("creeper_exploded", entity) == 1)) {
-			chill = 0;
+			chill = 1;
 			{
 				Entity _ent = sourceentity;
 				Scoreboard _sc = _ent.getLevel().getScoreboard();
@@ -54,7 +54,7 @@ public class TurboCreeperExplosionProcedure {
 			}
 			if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
 				_entity.addEffect(new MobEffectInstance(MobEffects.INVISIBILITY, 60, 0));
-			if (Mth.nextInt(RandomSource.create(), 1, 5) == 1) {
+			if (Mth.nextInt(RandomSource.create(), 1, 5) == 2) {
 				chill = 20;
 				{
 					Entity _ent = sourceentity;
