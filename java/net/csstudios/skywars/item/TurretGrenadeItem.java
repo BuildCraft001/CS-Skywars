@@ -3,6 +3,7 @@ package net.csstudios.skywars.item;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.UseAnim;
+import net.minecraft.world.item.ProjectileWeaponItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.projectile.AbstractArrow;
@@ -13,11 +14,12 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.server.level.ServerPlayer;
 
+import net.csstudios.skywars.init.CsSkywarsModItems;
 import net.csstudios.skywars.entity.TurretGrenadeEntity;
 
 public class TurretGrenadeItem extends Item {
 	public TurretGrenadeItem() {
-		super(new Item.Properties().durability(100));
+		super(new Item.Properties().stacksTo(16));
 	}
 
 	@Override
@@ -43,9 +45,36 @@ public class TurretGrenadeItem extends Item {
 			double y = entity.getY();
 			double z = entity.getZ();
 			if (true) {
-				TurretGrenadeEntity entityarrow = TurretGrenadeEntity.shoot(world, entity, world.getRandom(), 1f, 0, 0);
-				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
-				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
+				ItemStack stack = ProjectileWeaponItem.getHeldProjectile(entity, e -> e.getItem() == CsSkywarsModItems.TURRET_GRENADE.get());
+				if (stack == ItemStack.EMPTY) {
+					for (int i = 0; i < entity.getInventory().items.size(); i++) {
+						ItemStack teststack = entity.getInventory().items.get(i);
+						if (teststack != null && teststack.getItem() == CsSkywarsModItems.TURRET_GRENADE.get()) {
+							stack = teststack;
+							break;
+						}
+					}
+				}
+				if (entity.getAbilities().instabuild || stack != ItemStack.EMPTY) {
+					TurretGrenadeEntity entityarrow = TurretGrenadeEntity.shoot(world, entity, world.getRandom(), 1f, 0, 0);
+					itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
+					if (entity.getAbilities().instabuild) {
+						entityarrow.pickup = AbstractArrow.Pickup.CREATIVE_ONLY;
+					} else {
+						if (new ItemStack(CsSkywarsModItems.TURRET_GRENADE.get()).isDamageableItem()) {
+							if (stack.hurt(1, world.getRandom(), entity)) {
+								stack.shrink(1);
+								stack.setDamageValue(0);
+								if (stack.isEmpty())
+									entity.getInventory().removeItem(stack);
+							}
+						} else {
+							stack.shrink(1);
+							if (stack.isEmpty())
+								entity.getInventory().removeItem(stack);
+						}
+					}
+				}
 			}
 		}
 	}

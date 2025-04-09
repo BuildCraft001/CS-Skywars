@@ -35,6 +35,7 @@ public class TurretEntity extends Monster {
 		maxUpStep = 0f;
 		xpReward = 0;
 		setNoAi(true);
+		setPersistenceRequired();
 	}
 
 	@Override
@@ -45,6 +46,11 @@ public class TurretEntity extends Monster {
 	@Override
 	public MobType getMobType() {
 		return MobType.UNDEFINED;
+	}
+
+	@Override
+	public boolean removeWhenFarAway(double distanceToClosestPlayer) {
+		return false;
 	}
 
 	@Override

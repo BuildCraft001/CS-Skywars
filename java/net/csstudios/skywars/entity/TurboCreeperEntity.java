@@ -95,8 +95,6 @@ public class TurboCreeperEntity extends Monster {
 
 	@Override
 	public boolean hurt(DamageSource source, float amount) {
-		if (source.is(DamageTypes.IN_FIRE))
-			return false;
 		if (source.getDirectEntity() instanceof AbstractArrow)
 			return false;
 		if (source.is(DamageTypes.FALL))

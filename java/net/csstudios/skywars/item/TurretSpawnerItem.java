@@ -14,12 +14,13 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.server.level.ServerPlayer;
 
+import net.csstudios.skywars.procedures.ThrowTurretProcedure;
 import net.csstudios.skywars.init.CsSkywarsModItems;
 import net.csstudios.skywars.entity.TurretSpawnerEntity;
 
 public class TurretSpawnerItem extends Item {
 	public TurretSpawnerItem() {
-		super(new Item.Properties().durability(100));
+		super(new Item.Properties().stacksTo(16));
 	}
 
 	@Override
@@ -74,6 +75,7 @@ public class TurretSpawnerItem extends Item {
 								entity.getInventory().removeItem(stack);
 						}
 					}
+					ThrowTurretProcedure.execute(entity, itemstack);
 				}
 			}
 		}

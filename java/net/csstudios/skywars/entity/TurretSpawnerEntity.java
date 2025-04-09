@@ -51,7 +51,7 @@ public class TurretSpawnerEntity extends AbstractArrow implements ItemSupplier {
 	@Override
 	@OnlyIn(Dist.CLIENT)
 	public ItemStack getItem() {
-		return new ItemStack(CsSkywarsModItems.GRENADE.get());
+		return new ItemStack(CsSkywarsModItems.TURRET_GRENADE.get());
 	}
 
 	@Override
@@ -74,7 +74,7 @@ public class TurretSpawnerEntity extends AbstractArrow implements ItemSupplier {
 	@Override
 	public void tick() {
 		super.tick();
-		TurretGrenadeNoGravityProcedure.execute(this.level, this.getX(), this.getY(), this.getZ());
+		TurretGrenadeNoGravityProcedure.execute(this.level, this.getX(), this.getY(), this.getZ(), this);
 		if (this.inGround)
 			this.discard();
 	}
