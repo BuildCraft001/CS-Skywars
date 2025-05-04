@@ -18,9 +18,6 @@ public class RocketExplodeProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		boolean found = false;
 		String block = "";
-		double sx = 0;
-		double sy = 0;
-		double sz = 0;
 		double i = 0;
 		double j = 0;
 		double k = 0;
@@ -52,15 +49,10 @@ public class RocketExplodeProcedure {
 			                    new CommandSourceStack(CommandSource.NULL, new Vec3(xCord, yCord, zCord), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), 
 			                    "setblock ~ ~ ~ air");
 			            
-			            if (world instanceof ServerLevel _level && block != "minecraft:air")
+			            if (world instanceof ServerLevel _level && !block.equals("minecraft:air"))
 			                _level.getServer().getCommands().performPrefixedCommand(
 			                    new CommandSourceStack(CommandSource.NULL, new Vec3(xCord, yCord, zCord), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 			                    "summon minecraft:falling_block ~ ~ ~ {BlockState:{Name:\"" + block + "\"},Time:-2000}");
-
-	                    if (world instanceof ServerLevel _level)
-			                _level.getServer().getCommands().performPrefixedCommand(
-			                    new CommandSourceStack(CommandSource.NULL, new Vec3(xCord, yCord, zCord), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), 
-			                    "kill @e[type=minecraft:falling_block,nbt={BlockState:{Name:\"minecraft:sand\"}}]");
 
 			            if (world instanceof ServerLevel _level)
 			                _level.getServer().getCommands().performPrefixedCommand(

@@ -1,10 +1,5 @@
 package net.csstudios.skywars.procedures;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.TickEvent;
-
 import net.minecraft.world.scores.criteria.ObjectiveCriteria;
 import net.minecraft.world.scores.Scoreboard;
 import net.minecraft.world.scores.Objective;
@@ -17,26 +12,12 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
 
-import javax.annotation.Nullable;
-
 import java.util.stream.Collectors;
 import java.util.List;
 import java.util.Comparator;
 
-@Mod.EventBusSubscriber
 public class SideeyeCheckerProcedure {
-	@SubscribeEvent
-	public static void onPlayerTick(TickEvent.PlayerTickEvent event) {
-		if (event.phase == TickEvent.Phase.END) {
-			execute(event, event.player.level, event.player);
-		}
-	}
-
 	public static void execute(LevelAccessor world, Entity entity) {
-		execute(null, world, entity);
-	}
-
-	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
 		double distance = 0;

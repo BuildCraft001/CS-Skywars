@@ -1,0 +1,9 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "bottom": "cs_skywars:block/chaos_map",
+    "top": "cs_skywars:block/chaos_map",
+    "side": "cs_skywars:block/chaos_map"
+  },
+  "render_type": "solid"
+}
