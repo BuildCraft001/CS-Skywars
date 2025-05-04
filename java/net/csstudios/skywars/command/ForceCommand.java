@@ -15,11 +15,13 @@ import net.minecraft.commands.Commands;
 
 import net.csstudios.skywars.procedures.ForceStartProcedure;
 
+import com.mojang.brigadier.arguments.StringArgumentType;
+
 @Mod.EventBusSubscriber
 public class ForceCommand {
 	@SubscribeEvent
 	public static void registerCommand(RegisterCommandsEvent event) {
-		event.getDispatcher().register(Commands.literal("force").requires(s -> s.hasPermission(3)).executes(arguments -> {
+		event.getDispatcher().register(Commands.literal("force").requires(s -> s.hasPermission(3)).then(Commands.argument("map", StringArgumentType.word()).then(Commands.argument("mode", StringArgumentType.word()).executes(arguments -> {
 			ServerLevel world = arguments.getSource().getLevel();
 			double x = arguments.getSource().getPosition().x();
 			double y = arguments.getSource().getPosition().y();
@@ -29,8 +31,8 @@ public class ForceCommand {
 				entity = FakePlayerFactory.getMinecraft(world);
 			Direction direction = entity.getDirection();
 
-			ForceStartProcedure.execute(world, x, y, z);
+			ForceStartProcedure.execute(world, x, y, z, arguments);
 			return 0;
-		}));
+		}))));
 	}
 }
