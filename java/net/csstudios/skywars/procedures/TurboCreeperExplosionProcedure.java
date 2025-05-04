@@ -54,7 +54,7 @@ public class TurboCreeperExplosionProcedure {
 			}
 			if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
 				_entity.addEffect(new MobEffectInstance(MobEffects.INVISIBILITY, 60, 0));
-			if (Mth.nextInt(RandomSource.create(), 1, 5) == 2) {
+			if (Mth.nextInt(RandomSource.create(), 2, 2) == 2) {
 				chill = 20;
 				{
 					Entity _ent = sourceentity;

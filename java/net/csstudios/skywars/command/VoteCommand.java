@@ -13,6 +13,7 @@ import net.minecraft.commands.Commands;
 
 import net.csstudios.skywars.procedures.VoteTeamWarsProcedure;
 import net.csstudios.skywars.procedures.VoteRampageProcedure;
+import net.csstudios.skywars.procedures.VoteFreeForAllProcedure;
 import net.csstudios.skywars.procedures.VoteClassicProcedure;
 import net.csstudios.skywars.procedures.VoteChaosProcedure;
 import net.csstudios.skywars.procedures.VoteBountyHuntProcedure;
@@ -82,6 +83,18 @@ public class VoteCommand {
 					Direction direction = entity.getDirection();
 
 					VoteTeamWarsProcedure.execute(entity);
+					return 0;
+				})).then(Commands.literal("free_for_all").executes(arguments -> {
+					ServerLevel world = arguments.getSource().getLevel();
+					double x = arguments.getSource().getPosition().x();
+					double y = arguments.getSource().getPosition().y();
+					double z = arguments.getSource().getPosition().z();
+					Entity entity = arguments.getSource().getEntity();
+					if (entity == null)
+						entity = FakePlayerFactory.getMinecraft(world);
+					Direction direction = entity.getDirection();
+
+					VoteFreeForAllProcedure.execute(entity);
 					return 0;
 				}))));
 	}
