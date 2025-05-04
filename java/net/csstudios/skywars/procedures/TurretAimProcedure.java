@@ -13,8 +13,11 @@ import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.chat.Component;
 import net.minecraft.commands.arguments.EntityAnchorArgument;
+import net.minecraft.commands.CommandSourceStack;
+import net.minecraft.commands.CommandSource;
 import net.minecraft.client.Minecraft;
 
 import net.csstudios.skywars.init.CsSkywarsModEntities;
@@ -26,6 +29,21 @@ public class TurretAimProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
+		{
+			Entity _ent = entity;
+			if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+				_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4,
+						_ent.getName().getString(), _ent.getDisplayName(), _ent.level.getServer(), _ent), ("say Hallo: " + (new Object() {
+							public int getScore(String score, Entity _ent) {
+								Scoreboard _sc = _ent.getLevel().getScoreboard();
+								Objective _so = _sc.getObjective(score);
+								if (_so != null)
+									return _sc.getOrCreatePlayerScore(_ent.getScoreboardName(), _so).getScore();
+								return 0;
+							}
+						}.getScore("turretcooldown", entity))));
+			}
+		}
 		if (!world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 64, 64, 64), e -> true).isEmpty() && new Object() {
 			public int getScore(String score, Entity _ent) {
 				Scoreboard _sc = _ent.getLevel().getScoreboard();
@@ -43,7 +61,11 @@ public class TurretAimProcedure {
 				}
 				return false;
 			}
-		}.checkGamemode(entity)) {
+		}.checkGamemode(((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 64, 64, 64), e -> true).stream().sorted(new Object() {
+			Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+				return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+			}
+		}.compareDistOf(x, y, z)).findFirst().orElse(null)))) {
 			entity.lookAt(EntityAnchorArgument.Anchor.EYES, new Vec3((((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 64, 64, 64), e -> true).stream().sorted(new Object() {
 				Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 					return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
@@ -75,7 +97,11 @@ public class TurretAimProcedure {
 				}
 				return false;
 			}
-		}.checkGamemode(entity)) {
+		}.checkGamemode(((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 64, 64, 64), e -> true).stream().sorted(new Object() {
+			Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+				return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+			}
+		}.compareDistOf(x, y, z)).findFirst().orElse(null)))) {
 			{
 				Entity _shootFrom = entity;
 				Level projectileLevel = _shootFrom.level;
